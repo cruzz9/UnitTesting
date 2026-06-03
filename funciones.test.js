@@ -44,3 +44,16 @@ test("La contraseña no es validad contiene letras y numeros",()=>{
 test("La contraseña es validad contiene numeros",()=>{
     expect(funciones.validacionContraseñas("12345678")).toBeTruthy();
 });
+
+//EJERCICIO TRES
+test("La conversion de Celsius Fahrenheit es 32",()=>{
+    expect(funciones.celsiusAFahrenheit(0)).toBe(32);
+});
+
+test("La conversion de Celsius Fahrenheit es 77",()=>{
+    expect(funciones.celsiusAFahrenheit(25)).toBe(77);
+});
+
+test("La conversion de Celsius Fahrenheit es 14",()=>{
+    expect(funciones.celsiusAFahrenheit(-10)).toBe(14);
+});

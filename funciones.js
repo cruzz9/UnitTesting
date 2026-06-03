@@ -33,6 +33,10 @@ function validacionContraseñas(password){
         return false;
     }
 }
+//Ejercicio 3 — Conversor de temperatura
+function celsiusAFahrenheit(celsius){
+    return Fahrenheit = (celsius * 9/5) + 32;
+}
 
 //exportamos las funciones 
 module.exports.suma = suma;
@@ -40,3 +44,4 @@ module.exports.multiplicacion= multiplicacion;
 module.exports.validarCorreo= validarCorreo;
 module.exports.calDescuento=calDescuento;
 module.exports.validacionContraseñas= validacionContraseñas;
+module.exports.celsiusAFahrenheit =celsiusAFahrenheit;

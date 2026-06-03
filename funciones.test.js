@@ -34,13 +34,13 @@ test("El descuento de 300 por el porcentaje de 120 debe ser invalido",()=>{
 
 //EJRCICIO DOS 
 test("La contraseña es validad contiene letras y numeros",()=>{
-    expect(funciones.validacionContraseñas(password)).toBeTruthy();
+    expect(funciones.validacionContraseñas("abc12345")).toBeTruthy();
 });
 
 test("La contraseña no es validad contiene letras y numeros",()=>{
-    expect(funciones.validacionContraseñas(password)).toBeFalsy();
+    expect(funciones.validacionContraseñas("abcdef")).toBeFalsy();
 });
 
-test("La contraseña es validad contiene letras y numeros",()=>{
-    expect(funciones.validacionContraseñas(password)).toBeTruthy();
+test("La contraseña es validad contiene numeros",()=>{
+    expect(funciones.validacionContraseñas("12345678")).toBeTruthy();
 });

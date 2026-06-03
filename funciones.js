@@ -38,6 +38,15 @@ function celsiusAFahrenheit(celsius){
     return Fahrenheit = (celsius * 9/5) + 32;
 }
 
+//Ejercicio 4 — Verificador de mayoría de edad
+function esMayorDeEdad(edad){
+    if( edad >= 18){
+    return true;
+    }
+    return false;
+}
+
+
 //exportamos las funciones 
 module.exports.suma = suma;
 module.exports.multiplicacion= multiplicacion;
@@ -45,3 +54,4 @@ module.exports.validarCorreo= validarCorreo;
 module.exports.calDescuento=calDescuento;
 module.exports.validacionContraseñas= validacionContraseñas;
 module.exports.celsiusAFahrenheit =celsiusAFahrenheit;
+module.exports.esMayorDeEdad=esMayorDeEdad;

@@ -57,3 +57,16 @@ test("La conversion de Celsius Fahrenheit es 77",()=>{
 test("La conversion de Celsius Fahrenheit es 14",()=>{
     expect(funciones.celsiusAFahrenheit(-10)).toBe(14);
 });
+
+//ejercicio 4
+test("La edad ingresada es mayor a 18",()=>{
+    expect(funciones.esMayorDeEdad(18)).toBeTruthy();
+});
+
+test("La edad ingresada es mayor a 18",()=>{
+    expect(funciones.esMayorDeEdad(25)).toBeTruthy();
+});
+
+test("La edad ingresada es mayor a 18",()=>{
+    expect(funciones.esMayorDeEdad(16)).toBeFalsy();
+});

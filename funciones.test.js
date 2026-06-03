@@ -17,3 +17,30 @@ test("El correo feraguilar@gmail.com tiene un formato valido", ()=>{
 test("El correo feraguilar@gmail.com tiene un formato valido", ()=>{
     expect(funciones.validarCorreo("feraguilar@gmail.com")).toBeTruthy();
 });
+
+//EJERCICIO UNO 
+
+test("El descuento de 1000 por el porcentaje de 20 debe ser igual a 800",()=>{
+    expect(funciones.calDescuento(1000,20)).toBe(800);
+});
+
+test("El descuento de 500 por el porcentaje de 10 debe ser igual a 450",()=>{
+    expect(funciones.calDescuento(500,10)).toBe(450);
+});
+
+test("El descuento de 300 por el porcentaje de 120 debe ser invalido",()=>{
+    expect(funciones.calDescuento(300,120)).toBeTruthy();
+});
+
+//EJRCICIO DOS 
+test("La contraseña es validad contiene letras y numeros",()=>{
+    expect(funciones.validacionContraseñas(password)).toBeTruthy();
+});
+
+test("La contraseña no es validad contiene letras y numeros",()=>{
+    expect(funciones.validacionContraseñas(password)).toBeFalsy();
+});
+
+test("La contraseña es validad contiene letras y numeros",()=>{
+    expect(funciones.validacionContraseñas(password)).toBeTruthy();
+});

@@ -20,6 +20,9 @@ function calDescuento(precio,porcentaje){
     let total= precio-descuento;
     return  total;
 }
+console.log(calcularDescuento(1000, 20));
+console.log(calcularDescuento(500, 10));
+console.log(calcularDescuento(300, 120));
 
 //EJERCICIO DOS
 function validacionContraseñas(password){
@@ -33,10 +36,18 @@ function validacionContraseñas(password){
         return false;
     }
 }
+console.log(validarPassword("abc12345"));
+console.log(validarPassword("abcdef"));
+console.log(validarPassword("12345678"));
+
+
 //Ejercicio 3 — Conversor de temperatura
 function celsiusAFahrenheit(celsius){
     return Fahrenheit = (celsius * 9/5) + 32;
 }
+console.log(celsiusAFahrenheit(0));
+console.log(celsiusAFahrenheit(25));
+console.log(celsiusAFahrenheit(-10));
 
 //Ejercicio 4 — Verificador de mayoría de edad
 function esMayorDeEdad(edad){
@@ -45,6 +56,18 @@ function esMayorDeEdad(edad){
     }
     return false;
 }
+console.log(esMayorDeEdad(18));
+console.log(esMayorDeEdad(25));
+console.log(esMayorDeEdad(16));
+
+
+//Ejercicio 5 — Generador de nombre completo
+function generarNombreCompleto(nombre, apellido) {
+    return `${nombre} ${apellido}`;
+}
+console.log(generarNombreCompleto("Ana", "Martínez"));   // "Ana Martínez"
+console.log(generarNombreCompleto("Luis", "Ramírez"));   // "Luis Ramírez"
+///////////////////////////////////////////////////////////
 
 
 //exportamos las funciones 

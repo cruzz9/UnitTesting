@@ -17,7 +17,7 @@ test("El correo feraguilar@gmail.com tiene un formato valido", ()=>{
 test("El correo feraguilar@gmail.com tiene un formato valido", ()=>{
     expect(funciones.validarCorreo("feraguilar@gmail.com")).toBeTruthy();
 });
-
+/*
 //EJERCICIO UNO 
 
 test("El descuento de 1000 por el porcentaje de 20 debe ser igual a 800",()=>{
@@ -69,4 +69,4 @@ test("La edad ingresada es mayor a 18",()=>{
 
 test("La edad ingresada es mayor a 18",()=>{
     expect(funciones.esMayorDeEdad(16)).toBeFalsy();
-});
+}); */

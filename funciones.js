@@ -36,14 +36,14 @@ function validacionContraseñas(password){
         return false;
     }
 }
-console.log(validarPassword("abc12345"));
-console.log(validarPassword("abcdef"));
-console.log(validarPassword("12345678"));
+console.log(validacionContraseñas("abc12345"));
+console.log(validacionContraseñas("abcdef"));
+console.log(validacionContraseñas("12345678"));
 
 
 //Ejercicio 3 — Conversor de temperatura
 function celsiusAFahrenheit(celsius){
-    return Fahrenheit = (celsius * 9/5) + 32;
+    return (celsius * 9/5) + 32;
 }
 console.log(celsiusAFahrenheit(0));
 console.log(celsiusAFahrenheit(25));
